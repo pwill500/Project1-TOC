@@ -6,7 +6,7 @@ def convert_cnf_csv_format(input_path, output_path):
     """
 
     with open(input_path, "r") as infile, open(output_path, "w") as outfile:
-        max = 31
+        max = 151
         curr = 0
 
         for line in infile:

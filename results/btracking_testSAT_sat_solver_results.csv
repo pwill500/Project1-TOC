@@ -1,16 +1,76 @@
 instance_id,n_vars,n_clauses,method,satisfiable,time_seconds,solution
-1000,4,9,BackTracking,S,2.0324718207120895e-05,"{1: False, 2: False, 3: False, 4: False}"
-1001,4,9,BackTracking,S,9.411945939064026e-06,"{1: True, 2: False, 3: False, 4: False}"
-1002,4,9,BackTracking,S,6.353016942739487e-06,"{1: True, 2: False, 3: False, 4: False}"
-1003,4,9,BackTracking,U,8.796341717243195e-06,{}
-1004,4,9,BackTracking,S,8.189119398593903e-06,"{1: False, 2: False, 3: False, 4: False}"
-1005,4,9,BackTracking,U,1.2324191629886627e-05,{}
-1006,4,9,BackTracking,U,7.384922355413437e-06,{}
-1007,4,9,BackTracking,S,1.4891847968101501e-05,"{1: False, 2: False, 3: True, 4: False}"
-1008,4,9,BackTracking,U,7.782131433486938e-06,{}
-1009,4,9,BackTracking,S,7.885973900556564e-06,"{1: True, 2: True, 3: False, 4: False}"
-1010,8,18,BackTracking,U,4.693213850259781e-05,{}
-1011,8,18,BackTracking,S,2.2769905626773834e-05,"{1: True, 2: True, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False}"
-1012,8,18,BackTracking,U,2.1560583263635635e-05,{}
-1013,8,18,BackTracking,S,3.757001832127571e-05,"{1: True, 2: True, 3: True, 4: True, 5: False, 6: False, 7: False, 8: False}"
-1014,8,18,BackTracking,U,2.7455855160951614e-05,{}
+1000,4,9,BackTracking,S,3.213901072740555e-05,"{1: False, 2: False, 3: False, 4: False}"
+1001,4,9,BackTracking,S,1.100124791264534e-05,"{1: True, 2: False, 3: False, 4: False}"
+1002,4,9,BackTracking,S,7.636845111846924e-06,"{1: True, 2: False, 3: False, 4: False}"
+1003,4,9,BackTracking,U,9.42125916481018e-06,{}
+1004,4,9,BackTracking,S,8.710194379091263e-06,"{1: False, 2: False, 3: False, 4: False}"
+1005,4,9,BackTracking,U,1.3657845556735992e-05,{}
+1006,4,9,BackTracking,U,8.380971848964691e-06,{}
+1007,4,9,BackTracking,S,1.666322350502014e-05,"{1: False, 2: False, 3: True, 4: False}"
+1008,4,9,BackTracking,U,8.698087185621262e-06,{}
+1009,4,9,BackTracking,S,2.9024668037891388e-05,"{1: True, 2: True, 3: False, 4: False}"
+1010,8,18,BackTracking,U,2.883467823266983e-05,{}
+1011,8,18,BackTracking,S,3.85921448469162e-05,"{1: True, 2: True, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False}"
+1012,8,18,BackTracking,U,2.134311944246292e-05,{}
+1013,8,18,BackTracking,S,2.290075644850731e-05,"{1: True, 2: True, 3: True, 4: True, 5: False, 6: False, 7: False, 8: False}"
+1014,8,18,BackTracking,U,1.347297802567482e-05,{}
+1015,8,18,BackTracking,S,9.70577821135521e-06,"{1: True, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False}"
+1016,8,18,BackTracking,U,1.8789898604154587e-05,{}
+1017,8,18,BackTracking,S,2.2280961275100708e-05,"{1: False, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False}"
+1018,8,18,BackTracking,S,1.8046237528324127e-05,"{1: True, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False}"
+1019,8,18,BackTracking,S,1.1140014976263046e-05,"{1: True, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False}"
+1020,12,20,BackTracking,S,2.4965964257717133e-05,"{1: True, 2: False, 3: True, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False}"
+1021,12,20,BackTracking,U,2.3485161364078522e-05,{}
+1022,12,20,BackTracking,U,1.4719553291797638e-05,{}
+1023,12,20,BackTracking,U,3.40193510055542e-05,{}
+1024,12,20,BackTracking,S,3.493111580610275e-05,"{1: False, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False}"
+1025,12,20,BackTracking,S,7.450021803379059e-05,"{1: False, 2: False, 3: True, 4: False, 5: True, 6: False, 7: True, 8: True, 9: True, 10: False, 11: False, 12: False}"
+1026,12,20,BackTracking,S,4.884693771600723e-05,"{1: True, 2: True, 3: False, 4: True, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False}"
+1027,12,20,BackTracking,U,1.5933066606521606e-05,{}
+1028,12,20,BackTracking,U,2.022087574005127e-05,{}
+1029,12,20,BackTracking,S,1.7882324755191803e-05,"{1: False, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False}"
+1030,16,30,BackTracking,U,0.00011413777247071266,{}
+1031,16,30,BackTracking,U,2.8728973120450974e-05,{}
+1032,16,30,BackTracking,U,4.081195220351219e-05,{}
+1033,16,30,BackTracking,U,2.27978453040123e-05,{}
+1034,16,30,BackTracking,U,6.131967529654503e-05,{}
+1035,16,30,BackTracking,S,2.9176007956266403e-05,"{1: False, 2: True, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False, 13: False, 14: False, 15: False, 16: False}"
+1036,16,30,BackTracking,U,2.0825769752264023e-05,{}
+1037,16,30,BackTracking,U,2.097664400935173e-05,{}
+1038,16,30,BackTracking,S,3.559282049536705e-05,"{1: False, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False, 13: False, 14: False, 15: False, 16: False}"
+1039,16,30,BackTracking,S,2.901209518313408e-05,"{1: True, 2: True, 3: True, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False, 13: False, 14: False, 15: False, 16: False}"
+1040,18,32,BackTracking,U,7.473677396774292e-05,{}
+1041,18,32,BackTracking,U,0.00011792592704296112,{}
+1042,18,32,BackTracking,U,6.457371637225151e-05,{}
+1043,18,32,BackTracking,U,3.520911559462547e-05,{}
+1044,18,32,BackTracking,U,3.582518547773361e-05,{}
+1045,18,32,BackTracking,U,6.521400064229965e-05,{}
+1046,18,32,BackTracking,U,2.4464912712574005e-05,{}
+1047,18,32,BackTracking,U,3.931298851966858e-05,{}
+1048,18,32,BackTracking,U,2.429913729429245e-05,{}
+1049,18,32,BackTracking,U,2.4450942873954773e-05,{}
+1050,20,33,BackTracking,S,3.991974517703056e-05,"{1: False, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False, 13: False, 14: False, 15: False, 16: False, 17: False, 18: False, 19: False, 20: False}"
+1051,20,33,BackTracking,U,3.057997673749924e-05,{}
+1052,20,33,BackTracking,U,0.00011666584759950638,{}
+1053,20,33,BackTracking,S,1.7428770661354065e-05,"{1: True, 2: False, 3: False, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False, 13: False, 14: False, 15: False, 16: False, 17: False, 18: False, 19: False, 20: False}"
+1054,20,33,BackTracking,U,4.445388913154602e-05,{}
+1055,20,33,BackTracking,U,3.827502951025963e-05,{}
+1056,20,33,BackTracking,S,4.4218264520168304e-05,"{1: True, 2: True, 3: True, 4: False, 5: False, 6: False, 7: False, 8: False, 9: False, 10: False, 11: False, 12: False, 13: False, 14: False, 15: False, 16: False, 17: False, 18: False, 19: False, 20: False}"
+1057,20,33,BackTracking,U,4.446180537343025e-05,{}
+1058,20,33,BackTracking,U,3.0288007110357285e-05,{}
+1059,20,33,BackTracking,U,3.803102299571037e-05,{}
+1060,22,38,BackTracking,U,4.318682476878166e-05,{}
+1061,22,38,BackTracking,U,3.422889858484268e-05,{}
+1062,22,38,BackTracking,U,3.437278792262077e-05,{}
+1063,22,38,BackTracking,U,0.00013891514390707016,{}
+1064,22,38,BackTracking,U,2.7161091566085815e-05,{}
+1065,22,38,BackTracking,U,2.7265865355730057e-05,{}
+1066,22,38,BackTracking,U,4.1253864765167236e-05,{}
+1067,22,38,BackTracking,U,4.787323996424675e-05,{}
+1068,22,38,BackTracking,U,5.267094820737839e-05,{}
+1069,22,38,BackTracking,U,2.8042122721672058e-05,{}
+1070,24,43,BackTracking,U,5.894387140870094e-05,{}
+1071,24,43,BackTracking,U,3.1630974262952805e-05,{}
+1072,24,43,BackTracking,U,6.178393959999084e-05,{}
+1073,24,43,BackTracking,U,6.95670023560524e-05,{}
+1074,24,43,BackTracking,U,4.995707422494888e-05,{}
