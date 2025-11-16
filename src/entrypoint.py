@@ -4,6 +4,7 @@ from src.helpers.constants import CONFIGURATION_FILE_PATH, parse_config, INPUT_F
 from src.sat import SatSolver
 from src.bin_packing import BinPacking
 from src.graph_coloring import GraphColoring
+from src.hamilton_cycle import HamiltonCycleColoring
 from src.helpers.automation_helpers import brief_about_project
 from src.graph import run_graphs
 
@@ -22,7 +23,7 @@ def main():
     elif selection["name"] == ProjectSelection.bin_packing.name:
         solver = BinPacking(INPUT_FILE)
     elif selection["name"] == ProjectSelection.hamiltonian.name:
-        solver = None
+        solver = HamiltonCycleColoring(INPUT_FILE)
     elif selection["name"] == ProjectSelection.graph_coloring.name:
         solver = GraphColoring(INPUT_FILE)
     
