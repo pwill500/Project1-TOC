@@ -35,6 +35,19 @@ class NTM_Tracer(TuringMachineSimulator):
             # 5. If no explicit transition exists, treat as implicit Reject.
             # 6. Generate children configurations and append to next_level[cite: 148].
 
+            for config in current_level:
+                if (isAccept(config) == True):
+                    stop overall
+                    print("success")
+
+                elif (isReject(config) == True):
+                    stop this branch
+
+                else:
+                    select valid from self.transitions
+                    
+                
+
             # Placeholder for logic:
             if not next_level and all_rejected:
                 # TODO: Handle "String rejected" output [cite: 258]
