@@ -35,47 +35,37 @@ class NTM_Tracer(TuringMachineSimulator):
                 self.simulated_transitions = 0
                 print("[", end="") # Start of the tree list
 
-            # --- DISPLAY LOGIC: Mirror the image format (List of Lists of Triples) ---
             display_level = []
             for c in current_level:
                 l_str = "".join(c[0]) if c[0] else ""
                 r_str = "".join(c[2]) if c[2] else ""
-                # Create triple: [left, state, right]
                 display_level.append([l_str, c[1], r_str])
             
-            # Print the current level as a list, adding a comma if not the first
             if depth > 0:
                 print(",")
             print(f"{display_level}", end="")
-            # -----------------------------------------------------------------------
 
             for config in current_level:
-                # Unpack safely (handles both 3-item root and 4-item descendants)
                 left, state, right = config[:3]
 
             # 2. Check if config is Accept (Stop and print success)
                 if state == self.accept_state:
-                    print("]") # Close the tree list
+                    print("]")
                     print(f'String accepted in {depth}')
                     print(f'Total transitions simulated: {self.simulated_transitions}')
                     
-                    # Backtrack to reconstruct path
                     path = []
                     curr_node = config
                     while curr_node:
-                        # Reconstruct string format for this node
                         p_left, p_state, p_right = curr_node[:3]
                         
-                        # Format: "left", "state", "head+right"
                         left_str = "".join(p_left) if p_left else ""
                         right_str = "".join(p_right) if p_right else ""
                         
                         path.append(f'["{left_str}", "{p_state}", "{right_str}"]')
                         
-                        # Move to parent (4th element if it exists)
                         curr_node = curr_node[3] if len(curr_node) > 3 else None
 
-                    # Path is recorded Accept -> Start, so reverse it
                     for step in reversed(path):
                         print(step)
 
@@ -110,7 +100,6 @@ class NTM_Tracer(TuringMachineSimulator):
                         new_left = left.copy()
                         new_right = right.copy()
 
-                        # Write to tape
                         if new_right:
                             new_right[0] = write_ch[0]
                         else:
@@ -132,11 +121,9 @@ class NTM_Tracer(TuringMachineSimulator):
                             else:
                                 new_right.insert(0, self.blank_symbol)
 
-                        # Store parent (config) as 4th element for backtracking
                         next_config = (new_left, dst, new_right, config)
                         next_level.append(next_config)
 
-                        # (Verbose print removed to match requested format)
 
                 if not valid:
                     continue
@@ -144,13 +131,10 @@ class NTM_Tracer(TuringMachineSimulator):
             if accepted:
                 return
             
-            # Placeholder for logic:
-            for i, nc in enumerate(next_level):
-                nl, ns, nr = nc[:3]
 
             if not next_level and all_rejected:
                 # TODO: Handle "String rejected" output
-                print("]") # Close tree
+                print("]")
                 print(f"String rejected in {depth}")
                 print(f"Total transitions simulated: {self.simulated_transitions}")
                 break
@@ -159,7 +143,7 @@ class NTM_Tracer(TuringMachineSimulator):
             depth += 1
 
         if depth >= max_depth:
-            print("]") # Close tree if max depth reached
+            print("]")
             print(f"Execution stopped after {max_depth} steps.")  #
 
     def print_trace_path(self, final_node):
